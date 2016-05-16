@@ -1,0 +1,18 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        maven {
+            url "http://172.16.10.156:8081/nexus/content/groups/mobile"
+        }
+        jcenter()
+    }
+    dependencies {
+        classpath 'me.ele:eradle:1.5.3'
+        classpath 'com.android.tools.build:gradle:1.5.+'
+        classpath 'me.ele:mapper-plugin:1.1.0'
+        classpath 'me.ele:mess-plugin:1.0.1'
+    }
+}
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

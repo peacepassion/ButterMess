@@ -1,0 +1,40 @@
+/.idea
+.gradle
+/build
+/captures
+/app/build
+*.apk
+*.iml
+
+# Eclipse project files
+.classpath
+.project
+/.settings
+
+# OSX files
+.DS_Store
+.DS_Store?
+
+# Windows thumbnail db
+ehthumbs.db
+Thumbs.db
+
+# OS-specific files
+._*
+.Spotlight-V100
+.Trashes
+
+# Log Files
+*.log
+
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
+crashlytics-build.properties
+
+#libsigner
+app/src/main/jniLibs/*/libsigner.so
+
+#mybuild.gradle
+app/mybuild.gradle
+config.properties
+local.properties

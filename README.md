@@ -28,7 +28,7 @@
  dependencies {
         classpath 'me.ele:eradle:1.5.3'
         classpath 'com.android.tools.build:gradle:1.5.+'
-        classpath 'me.ele:butter-mess-plugin:0.0.5'
+        classpath 'me.ele:butter-mess-plugin:0.1.3'
    }
     
 apply plugin: 'com.android.application'
@@ -57,4 +57,5 @@ public class App extends Application {
 ```
 
 ## feel free to use, welcome issue and comment
+
 
