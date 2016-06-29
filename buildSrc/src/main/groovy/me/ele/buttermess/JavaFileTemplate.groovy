@@ -62,8 +62,9 @@ class JavaFileTemplate {
       // key must use reflection because there are some private or protected class
       String key = "Class.forName(\"${injectedClazz}\")"
       String value = containsKeyWord(viewInjectorClazz) ?
-          "Class.forName(\"${viewInjectorClazz}\").newInstance()" : "${viewInjectorClazz}()"
-      code += String.format("map.put(%s, new %s);\n", key, value)
+          "(Injector<Object>) Class.forName(\"${viewInjectorClazz}\").newInstance()" :
+          "new ${viewInjectorClazz}()"
+      code += String.format("map.put(%s, %s);\n", key, value)
     }
     return code
   }
