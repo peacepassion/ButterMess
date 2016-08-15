@@ -11,11 +11,6 @@ public class ButterMessPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-
-        project.dependencies {
-            compile 'me.ele:butter-mess:0.1.1'
-        }
-
         project.afterEvaluate {
             if (project.plugins.findPlugin('com.android.application')) {
                 project.android.applicationVariants.all { ApkVariant variant ->

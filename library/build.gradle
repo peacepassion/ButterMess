@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'eradle'
 
 android {
     compileSdkVersion 23
@@ -22,18 +21,4 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.jakewharton:butterknife:6.1.0'
-}
-
-nexus {
-    repositoryUrl "http://172.16.10.156:8081/nexus/content/repositories/android/"
-    snapshotRepositoryUrl "http://172.16.10.156:8081/nexus/content/repositories/snapshots/"
-}
-
-modifyPom {
-    project {
-        groupId 'me.ele'
-        artifactId 'butter-mess'
-        version '0.1.1'
-        packaging 'aar'
-    }
 }
